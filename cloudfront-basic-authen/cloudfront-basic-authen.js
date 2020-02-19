@@ -8,7 +8,7 @@ exports.handler = (event, context, callback) => {
     const request = event.Records[0].cf.request;
     const headers = request.headers;
 
-    // Configure authentication
+    // Configure authentication, user and password must simple string (contain only "chu cai thuong va in hoa")
     const authUser = 'khanhnd';
     const authPass = 'toiLaKhaNh';
 
